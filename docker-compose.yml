@@ -1,0 +1,45 @@
+services:
+  office-collab:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: office-collab:2026.11
+    container_name: office-collab
+    restart: unless-stopped
+
+    ports:
+      - "8000:8000"
+
+    environment:
+      # 必填：DeepSeek API Key。也可预先写入 .openclaw/deepseek-api-key.txt
+      DEEPSEEK_API_KEY: "${DEEPSEEK_API_KEY:-}"
+      GATEWAY_PORT: "8000"
+      GATEWAY_BIND: "lan"
+      OFFICE_COLLAB_PDF_ENGINE: "chromium"
+      OFFICE_COLLAB_CHROME_PATH: "/usr/bin/chromium"
+      TZ: "Asia/Shanghai"
+
+    volumes:
+      # OpenClaw 配置与状态（含 API Key、Gateway Token）留在宿主，
+      # 不烘焙进镜像；首次启动前请确认 .openclaw/openclaw.json 存在。
+      - ./.openclaw:/app/.openclaw
+      # 报告产物与运行日志
+      - ./office-collab/outputs:/app/office-collab/outputs
+      - ./office-collab/state:/app/office-collab/state
+      - ./logs:/app/logs
+
+    healthcheck:
+      test: ["CMD", "/app/deploy/healthcheck.sh"]
+      interval: 30s
+      timeout: 5s
+      start_period: 240s
+      retries: 6
+
+    # 生成中文 PDF 时 Chromium 需要更大的 /dev/shm
+    shm_size: "512m"
+
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

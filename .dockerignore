@@ -1,0 +1,32 @@
+# 构建上下文裁剪：镜像里只需要源码，不需要本机的工具链、虚拟环境与状态库。
+
+# 本机安装的 Node / Python / 全局包
+tools/
+.venv/
+
+# OpenClaw 运行时状态、会话库、密钥（通过卷挂载提供）
+.openclaw/
+.home/
+.tmp-openclaw/
+logs/
+
+# Agent 仓库元数据
+**/.git/
+**/.git/**
+
+# 报告产物与运行状态（通过卷挂载）
+office-collab/outputs/
+office-collab/state/
+**/__pycache__/
+**/*.pyc
+
+# 实验文档与课件
+*.docx
+*.md.bak
+软件体系结构（研究生）实验指导.docx
+
+# 系统与编辑器噪音
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

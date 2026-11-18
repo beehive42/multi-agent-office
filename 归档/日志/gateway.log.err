@@ -1,0 +1,120 @@
+[gateway] startup phase: entry.run-main-import starting total=118.5ms
+[gateway] startup phase: entry.run-main-import 45.9ms total=164.4ms start=118.5ms
+[gateway] startup phase: cli.main.gateway-run-select-environment starting total=708.3ms
+[gateway] startup phase: cli.main.gateway-run-select-environment 13150.8ms total=13859.1ms start=708.3ms
+[gateway] startup phase: cli.main.gateway-run-imports starting total=13904.8ms
+[gateway] startup phase: cli.main.gateway-run-imports 7.7ms total=13912.4ms start=13904.8ms
+[gateway] startup phase: cli.main.gateway-run-pre-bootstrap starting total=13927.5ms
+[gateway] startup phase: cli.main.gateway-run-pre-bootstrap 9340.6ms total=23268.1ms start=13927.5ms
+[gateway] startup phase: cli.main.gateway-run-bootstrap starting total=23268.4ms
+[gateway] startup phase: cli.command.config-ready starting total=23272.9ms
+[gateway] startup phase: cli.command.config-guard-import starting total=23273.4ms
+[gateway] startup phase: cli.command.config-guard-import 13.2ms total=23286.7ms start=23273.4ms
+[gateway] startup phase: cli.bootstrap.admission.live-owner starting total=23309.1ms
+[gateway] startup phase: cli.bootstrap.admission.live-owner 7.1ms total=23316.2ms start=23309.1ms
+[gateway] startup phase: cli.bootstrap.admission.core-config starting total=23316.6ms
+[gateway] startup phase: cli.bootstrap.admission.core-config 7.7ms total=23324.2ms start=23316.6ms
+[gateway] startup phase: cli.bootstrap.admission.state-snapshot starting total=23324.8ms
+[gateway] startup phase: cli.bootstrap.admission.core-recovery starting total=25211.4ms
+[gateway] startup phase: cli.bootstrap.admission.core-recovery 3778.3ms total=28989.8ms start=25211.4ms
+[gateway] startup phase: cli.bootstrap.admission.database-runtime-import starting total=28990.6ms
+[gateway] startup phase: cli.bootstrap.admission.database-runtime-import 71.5ms total=29062.0ms start=28990.6ms
+[gateway] startup phase: cli.bootstrap.admission.database-readiness starting total=29062.5ms
+[state/agent-admission] Skipped openclaw-agent.sqlite: database is not a configured target; run openclaw doctor to inspect retained data.
+[gateway] startup phase: cli.bootstrap.admission.database-readiness 712.9ms total=29775.4ms start=29062.5ms agentCount=7 schemaProcessCount=2 schemaInspectionCount=7 schemaSnapshotCount=0
+[gateway] startup phase: cli.bootstrap.admission.session-runtime-import starting total=29775.6ms
+[gateway] startup phase: cli.bootstrap.admission.session-runtime-import 613.2ms total=30388.8ms start=29775.6ms
+[gateway] startup phase: cli.bootstrap.admission.agent-inventory starting total=30391.3ms
+[gateway] startup phase: cli.bootstrap.admission.agent-inventory 752.6ms total=31144.0ms start=30391.3ms
+[gateway] startup phase: cli.bootstrap.admission.session-targets starting total=31144.4ms
+[gateway] startup phase: cli.bootstrap.admission.session-targets 7.8ms total=31152.2ms start=31144.4ms agentCount=7 registeredDatabaseCount=8
+[gateway] startup phase: cli.bootstrap.admission.session-readiness starting total=31152.4ms
+[gateway] startup phase: cli.bootstrap.admission.session-readiness 0.4ms total=31152.8ms start=31152.4ms targetCount=2
+[gateway] startup phase: cli.bootstrap.admission.workspace-runtime-import starting total=31153.0ms
+[gateway] startup phase: cli.bootstrap.admission.workspace-runtime-import 9.9ms total=31162.9ms start=31153.0ms
+[gateway] startup phase: cli.bootstrap.admission.workspace-readiness starting total=31163.5ms
+[gateway] startup phase: cli.bootstrap.admission.workspace-readiness 6.6ms total=31170.1ms start=31163.5ms agentCount=7
+[gateway] startup phase: cli.bootstrap.admission.plugin-config starting total=31170.5ms
+[gateway] startup phase: cli.bootstrap.admission.plugin-config 5681.3ms total=36851.7ms start=31170.5ms
+[gateway] startup phase: cli.bootstrap.admission.config-recovery starting total=36853.9ms
+[gateway] startup phase: cli.bootstrap.admission.config-recovery 3806.1ms total=40660.0ms start=36853.9ms
+[gateway] startup phase: cli.bootstrap.admission.device-identity starting total=40660.4ms
+[gateway] startup phase: cli.bootstrap.admission.device-identity 748.5ms total=41409.0ms start=40660.4ms
+[gateway] startup phase: cli.bootstrap.admission.state-snapshot 18098.7ms total=41423.5ms start=23324.8ms
+[gateway] startup phase: cli.bootstrap.admission.config-guard starting total=41423.9ms
+[gateway] startup phase: cli.bootstrap.admission.config-guard 1.0ms total=41424.9ms start=41423.9ms
+[gateway] startup phase: cli.bootstrap.webhook-readiness starting total=43665.1ms
+[gateway] startup phase: cli.bootstrap.webhook-readiness 16640.7ms total=60305.8ms start=43665.1ms
+[gateway] startup phase: cli.bootstrap.plugin-plan-import starting total=60306.4ms
+[gateway] startup phase: cli.bootstrap.plugin-plan-import 7.1ms total=60313.5ms start=60306.4ms
+[gateway] startup phase: cli.bootstrap.plugin-plan starting total=60314.0ms
+[gateway] startup phase: cli.bootstrap.plugin-plan 2.9ms total=60316.8ms start=60314.0ms
+[gateway] startup phase: cli.bootstrap.plugin-payload-verification-import starting total=60455.2ms
+[gateway] startup phase: cli.bootstrap.plugin-payload-verification-import 6.0ms total=60461.2ms start=60455.2ms
+[gateway] startup phase: cli.bootstrap.plugin-payload-verification starting total=60461.5ms
+[gateway] startup phase: cli.bootstrap.plugin-payload-verification 14.8ms total=60476.3ms start=60461.5ms
+[gateway] startup phase: cli.command.config-ready 37221.3ms total=60494.2ms start=23272.9ms
+[gateway] startup phase: cli.main.gateway-run-reload-environment starting total=60494.6ms
+[gateway] startup phase: cli.main.gateway-run-reload-environment 1.0ms total=60495.6ms start=60494.6ms
+[gateway] startup phase: cli.main.gateway-run-bootstrap 37227.3ms total=60495.7ms start=23268.4ms
+[gateway] startup phase: cli.bootstrap.lifecycle-runtime starting total=62091.1ms
+[gateway] startup phase: cli.bootstrap.lifecycle-runtime 103.9ms total=62195.1ms start=62091.1ms
+[gateway] startup phase: cli.bootstrap.gateway-lock starting total=62196.0ms
+[gateway] startup phase: cli.bootstrap.gateway-lock 3573.7ms total=65769.7ms start=62196.0ms
+[gateway] startup phase: cli.bootstrap.boot-lifecycle starting total=65779.2ms
+[gateway] startup phase: cli.bootstrap.boot-lifecycle 57.0ms total=65836.2ms start=65779.2ms
+[gateway] startup phase: gateway.server-start-import starting total=65853.2ms
+[gateway] startup phase: gateway.server-start-import 795.0ms total=66648.2ms start=65853.2ms
+2026-11-02T12:59:00.118+08:00 [gateway] Older local CLI/SDK versions can bypass Gateway state mutation routing. Use matching CLI/SDK and Gateway versions; direct state writes from another process while this Gateway owns state are unsupported.
+[state/agent-db] agent database stale lease: owner-pid-dead; previous release not observed
+[state/agent-db] agent database integrityGateReason=stale-lease-full because=legacy-provenance-missing
+[state/agent-db] agent database integrity gate
+[state/agent-db] slow OpenClaw agent database open agentId=data elapsedMs=1935 path="C:\\Users\\22515\\Desktop\\多ai agent\\.openclaw\\agents\\data\\agent\\openclaw-agent.sqlite" pid=17000 threadId=13 isMainThread=false admissionMode=sync phaseDurationsMs={"open":1,"validation":1881,"configuration":2,"schema":22,"registration":29} because=legacy-provenance-missing integrityGateReason=stale-lease-full integrityGateMode=full integrityGateOutcome=healthy integrityGateMs=861 integrityCheckSyncMs=14 integrityOutsideCheckMs=847 canonicalIndexMs=10 repairedIndexCount=0 thresholdMs=1000
+[state/agent-db] agent database stale lease: owner-pid-dead; previous release not observed
+[state/agent-db] agent database stale lease: owner-pid-dead; previous release not observed
+[state/agent-db] agent database integrityGateReason=stale-lease-full because=legacy-provenance-missing
+[state/agent-db] agent database integrity gate
+[state/agent-db] agent database stale lease: owner-pid-dead; previous release not observed
+[state/agent-db] agent database stale lease: owner-pid-dead; previous release not observed
+[state/agent-db] agent database integrityGateReason=stale-lease-full because=legacy-provenance-missing
+[state/agent-db] agent database integrity gate
+[state/agent-db] agent database stale lease: owner-pid-dead; previous release not observed
+[state/agent-db] agent database stale lease: owner-pid-dead; previous release not observed
+[state/agent-db] agent database integrityGateReason=stale-lease-full because=legacy-provenance-missing
+[state/agent-db] agent database integrity gate
+[state/agent-db] agent database stale lease: owner-pid-dead; previous release not observed
+[state/agent-db] agent database integrityGateReason=stale-lease-full because=legacy-provenance-missing
+[state/agent-db] agent database integrity gate
+[state/agent-db] agent database clean-close receipt: written
+[state/agent-db] agent database stale lease: owner-pid-dead; previous release not observed
+[state/agent-db] agent database stale lease: owner-pid-dead; previous release not observed
+[state/agent-db] agent database integrityGateReason=stale-lease-full because=legacy-provenance-missing
+[state/agent-db] agent database integrity gate
+[state/agent-db] agent database clean-close receipt: written
+2026-11-02T12:59:07.752+08:00 [session-sqlite] slow SQLite reclamation Worker operation pid=17000 threadId=0 isMainThread=true reclamationKind=canonical-validation workerThreadId=15 elapsedMs=3308 outcome=resolved
+[state/agent-db] agent database clean-close receipt: written
+2026-11-02T12:59:08.099+08:00 [session-sqlite] slow SQLite reclamation Worker operation pid=17000 threadId=0 isMainThread=true reclamationKind=canonical-validation workerThreadId=16 elapsedMs=3286 outcome=resolved
+[state/agent-db] agent database clean-close receipt: written
+[state/agent-db] agent database clean-close receipt: written
+2026-11-02T12:59:09.600+08:00 [session-sqlite] slow SQLite reclamation Worker operation pid=17000 threadId=0 isMainThread=true reclamationKind=canonical-validation workerThreadId=18 elapsedMs=3759 outcome=resolved
+[state/agent-db] agent database clean-close receipt: active-leases
+[sqlite/transaction] slow SQLite transaction hold async=false database="C:\\Users\\22515\\Desktop\\多ai agent\\.openclaw\\agents\\main\\agent\\openclaw-agent.sqlite" operation=session.canonical-validation.certify elapsedMs=1140 phases={"beginMs":0,"sqlMs":1138,"hostAdmissionWaitMs":0,"commitMs":2} isMainThread=false mode=immediate pid=17000 threadId=17 thresholdMs=1000
+2026-11-02T12:59:09.610+08:00 [session-sqlite] slow SQLite reclamation Worker operation pid=17000 threadId=0 isMainThread=true reclamationKind=canonical-validation workerThreadId=17 elapsedMs=4515 outcome=resolved
+[state/agent-db] agent database clean-close receipt: written
+[state/agent-db] agent database clean-close receipt: written
+[state/agent-db] agent database clean-close receipt: written
+[state/agent-db] agent database clean-close receipt: written
+[state/agent-db] agent database clean-close receipt: written
+2026-11-02T12:59:10.993+08:00 [agents/subagent-registry] failed to persist subagent session timing err="Agent checker (C:\\Users\\22515\\Desktop\\多ai agent\\.openclaw\\agents\\checker\\agent\\openclaw-agent.sqlite): Agent checker has not completed startup inspection and preparation. Inspection and writable admission continue after the Gateway listener binds.\nSessions remain unavailable until background inspection and preparation finish. If they cannot complete, stop the Gateway, run \"openclaw doctor --fix\", and restart." runId=f48dd8cd-2baa-42e3-88fe-fce815930b02 childSessionKey=agent:checker:subagent:e4dbfcd3-acca-4f61-bece-1ec602e0e064
+2026-11-02T12:59:12.314+08:00 [session-sqlite] slow SQLite reclamation Worker operation pid=17000 threadId=0 isMainThread=true reclamationKind=canonical-validation workerThreadId=21 elapsedMs=2730 outcome=resolved
+[state/agent-db] agent database clean-close receipt: written
+2026-11-02T12:59:13.715+08:00 [state/agent-admission] agent database startup preparation still running agentId=checker phase=publication-wait elapsedMs=60257 phaseElapsedMs=3356 publishingAgentId=main
+2026-11-02T12:59:13.716+08:00 [state/agent-admission] agent database startup preparation still running agentId=main phase=models elapsedMs=60256 phaseElapsedMs=918
+2026-11-02T12:59:13.717+08:00 [state/agent-admission] agent database startup preparation still running agentId=manager phase=publication-wait elapsedMs=60255 phaseElapsedMs=3322 publishingAgentId=main
+2026-11-02T12:59:13.718+08:00 [state/agent-admission] agent database startup preparation still running agentId=planner phase=migration elapsedMs=60254 phaseElapsedMs=5452
+2026-11-02T12:59:13.718+08:00 [state/agent-admission] agent database startup preparation still running agentId=writer phase=migration elapsedMs=60254 phaseElapsedMs=3487
+2026-11-02T12:59:13.904+08:00 [session-sqlite] slow SQLite reclamation Worker operation pid=17000 threadId=0 isMainThread=true reclamationKind=canonical-validation workerThreadId=22 elapsedMs=3629 outcome=resolved
+[state/agent-db] agent database clean-close receipt: written
+[state/agent-db] agent database clean-close receipt: written
+2026-11-02T12:59:15.390+08:00 [agents/subagent-registry] failed to persist subagent session timing err="Agent checker (C:\\Users\\22515\\Desktop\\多ai agent\\.openclaw\\agents\\checker\\agent\\openclaw-agent.sqlite): Agent checker has not completed startup inspection and preparation. Inspection and writable admission continue after the Gateway listener binds.\nSessions remain unavailable until background inspection and preparation finish. If they cannot complete, stop the Gateway, run \"openclaw doctor --fix\", and restart." runId=f48dd8cd-2baa-42e3-88fe-fce815930b02 childSessionKey=agent:checker:subagent:e4dbfcd3-acca-4f61-bece-1ec602e0e064
+[state/agent-db] agent database clean-close receipt: written
